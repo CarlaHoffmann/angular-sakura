@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
         <h2 class="fontRaleway">BEST RAMEN IN TOWN</h2>
     </section>
     `,
-    styleUrls: ['./landing-page.component.scss']
+    // styleUrls: ['./landing-page.component.scss']
+    styleUrl: './landing-page.component.scss' 
 })
 export class LandingPageComponent {}
