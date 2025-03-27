@@ -8,6 +8,6 @@ import { OurMenuComponent } from './our-menu/our-menu.component';
   standalone: true,
   imports: [CommonModule, LandingPageComponent, OurMenuComponent],
   templateUrl: './main-content.component.html',
-  styleUrl: './main-content.component.scss',
+  styleUrl: './main-content.component.scss'
 })
 export class MainContentComponent {}
