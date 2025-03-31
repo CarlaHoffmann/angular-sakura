@@ -1,0 +1,41 @@
+footer {
+    height: 144px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 120px;
+    background-color: black;
+}
+
+.footer-content {
+    max-width: 1040px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    height: 44px;
+}
+
+.footer-img-box {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-img {
+    height: 40px;
+}
+
+@media(max-width: 1000px) {
+    footer {
+        padding: 0 40px;
+    }
+}
+
+@media(max-width: 580px) {
+    .footer-img {
+        display: none;
+    }
+}

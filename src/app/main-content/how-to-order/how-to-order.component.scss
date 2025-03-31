@@ -1,0 +1,48 @@
+.how-to-order-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 80px 40px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 64px;
+    color: rgb(159, 9, 8);
+    padding-bottom: 64px;
+}
+
+.order-sample {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pick-noodles, .pick-broth, .pick-toppings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >img {
+        width: 128x;
+        height: 128px;
+    }
+    >h3 {
+        font-size: 56px;
+        font-family: Economica, sans-serif;
+        text-align: center;
+        padding-top: 16px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .order-sample {
+        flex-direction: column;
+        gap: 56px;
+    }
+    .pick-noodles, .pick-broth, .pick-toppings {
+        >h3 {
+            font-size: 40px;
+        }
+    }
+}
