@@ -7,6 +7,13 @@
 
 $dark-red: rgb(128, 4, 4);
 
+@mixin dFlex($jc: center, $ai: center, $gap: 0) { // default Fall steht nach dem Doppepunkt
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
 /* raleway-100 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

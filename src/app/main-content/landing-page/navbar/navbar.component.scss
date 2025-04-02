@@ -3,8 +3,7 @@
 nav {
     width: 100%;
     padding: 32px;
-    display: flex;
-    justify-content: space-between;
+    @include dFlex(space-between); // AUfruf des mixin
     box-sizing: border-box;
     position: absolute;
     top: 0;
@@ -13,10 +12,10 @@ nav {
         height: 64px;
     }
     >div {
-        // width: 450px;
-        display: flex;
-        align-items: center;
-        gap: 32px;
+        @include dFlex($gap: 32px);
+        // display: flex;
+        // align-items: center;
+        // gap: 32px;
         >a {
             cursor: pointer;
             &:hover {
@@ -31,12 +30,17 @@ a {
     color: white;
 }
 
-.phone-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+@mixin borderStyling() {
     border: 2px solid white;
     border-radius: 10px;
+}
+
+.phone-btn {
+    @include dFlex($gap: 8px);
+    // display: flex;
+    // align-items: center;
+    // gap: 8px;
+    @include borderStyling();
     padding: 8px 8px;
     background-color: $dark-red;
     cursor: pointer;
@@ -44,8 +48,7 @@ a {
         width: 20px;
         height: 20px;
     }
-    &:hover >a {
-        color: rgb(225, 91, 124);
-        // text-decoration: underline;
+    &:hover {
+        background-color: rgb(174, 4, 4);
     }
 }
