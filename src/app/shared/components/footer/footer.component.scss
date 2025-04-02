@@ -16,16 +16,13 @@ footer {
 }
 
 .footer-logo {
-    height: 44px;
-}
-
-.footer-img-box {
-    display: flex;
-    gap: 16px;
-}
-
-.footer-img {
     height: 40px;
+}
+
+.impressum-link {
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
 @media(max-width: 1000px) {
@@ -35,7 +32,7 @@ footer {
 }
 
 @media(max-width: 580px) {
-    .footer-img {
+    .footer-logo {
         display: none;
     }
 }

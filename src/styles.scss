@@ -2,7 +2,10 @@
 * {
     margin: 0;
     font-family: 'Raleway';
+    scroll-behavior: smooth;
 }
+
+$dark-red: rgb(128, 4, 4);
 
 /* raleway-100 - latin */
 @font-face {
